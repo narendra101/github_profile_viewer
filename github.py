@@ -16,8 +16,7 @@ def get_github_profile(username):
 def display_github_profile(data):
     if data:
         for info in data:
-            if info.endswith('url'):
-                print(f'{Fore.GREEN}{info}:{Style.RESET_ALL} {Fore.CYAN}{data[info]}{Style.RESET_ALL}')
+            print(f'{Fore.GREEN}{info}:{Style.RESET_ALL} {Fore.CYAN}{data[info]}{Style.RESET_ALL}')
     else:
         print(f'{Fore.RED}User Not Found!{Style.RESET_ALL}')
 
